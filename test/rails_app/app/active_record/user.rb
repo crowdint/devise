@@ -6,5 +6,5 @@ class User < ActiveRecord::Base
 
   attr_accessible :username, :email, :first_name, :last_name, :password, :password_confirmation, :remember_me
 
-  skip_authentification_for :first_name, :last_name
+  skip_authentication_for :first_name, :last_name
 end
